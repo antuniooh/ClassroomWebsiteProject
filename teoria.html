@@ -1,0 +1,64 @@
+<!DOCTYPE>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="style/teorica.css" rel="stylesheet">
+</head>
+<body>
+    <div class = "menu">
+        <img src= "imagens/logo.png" height="54px" width="150px">
+            <ul>
+                    <li><a href="home.html"> Como Jogar? </a> </li>
+                    <li><a href="canvas.html"> Play </a> </li>
+                    <li><a href="login.html"> Login </a> </li>
+                    <li><a href="teoria.html"> Explicação Teórica </a> </li>
+            </ul>
+    </div>
+    <div class="teoria">
+    <h1>Teoria</h1>
+    <table border = 5 cellpadding="10px">
+    <tr>
+        <td ><p>1. Inicialmente é necessário criar as variaveis principais do jogo, sendo a primeira dela "canvas", pega-se a partir do ID criado no arquivo HTML; o "contexto" desse canvas, que será em 2d; A altura e largura usada serão as atribuidas ao canvas no arquivo HTML.</p></td>
+        <td ><img src="imagens/1.png"></td>
+    </tr>
+    <tr>
+        <td><p>2. Depois é necessário a criação do objeto chão, para ter um limite no pulo do personagem. O objeto tem como atributos um valor em y e uma altura. Há um metodo desenha, que será chamado na função desenha do projeto.</p></td>
+        <td><img src="imagens/chao.png"></td>
+    </tr>
+    <tr>
+        <td><p>3. Depois é necessário a criação do objeto personagem, que será a base do funcionamento do jogo. O personagem tem como atributos um valor em X e Y, uma largura e altura, gravidade, velocidade, forcaPulo, qntPulo. Sendo a ultima nada mais que o score do personagem. A gravidade, velocidade e forcaPulo serão necessárias para a execução do pulo. Além dos atributos, há o metodo "atualiza" que atualiza o status do personagem, ou seja sua função pular. O metodo "desenha" será chamado na função desenha e desenhará o personagem no canvas. O ultimo metodo é o "pula" que além de pular, soma mais um ao score.</p></td>
+        <td><img src="imagens/personagem.png"></td>
+
+    </tr>
+    <tr>
+        <td><p>4. Deve-se criar também variaveis para o carregamento das imagens do o objeto personagem e do fundo, que farão um teste se a imagem está pronta para ser reproduzida. Essas variaveis são importantes para o funcionamento da função "desenha" mais a frente.</p></td>
+        <td ><img src="imagens/imagens.png"></td>
+    </tr>
+    <tr>
+        <td><p>5. Cria-se a função clique, que terá o evento de a cada clique do usuário, chamar o objeto personagem e seu metodo "pula". </p></td>
+        <td ><img src="imagens/clique.png"></td>
+    </tr>
+    <tr>
+        <td><p>6. Cria-se a função main, que além de chamar o evento clique, da função anterior, chamará o metodo loop, e será a base para o funcionamento do game.</p></td>
+        <td ><img src="imagens/main.png"></td>
+    </tr>
+    <tr>
+        <td><p>7. Cria-se a função loop, que além de chamar a função atualiza e desenha, chamará a si mesma (loop), ou seja, irá gerar um loop eterno, já que sempre se chamará.</p></td>
+        <td ><img src="imagens/loop.png"></td>
+    </tr>
+    <tr>
+        <td><p>8. Cria-se a função atualiza, que terá o único intuito de sempre atualizar o personagem, a partir da chamada "objeto.metodo".</p></td>
+        <td ><img src="imagens/atualiza.png"></td>
+    </tr>
+    <tr>
+        <td><p>9. Por fim, cria-se a função desenha, que desenhará a borda do canvas, e testará se as imagens estão prontas (vide Passo 4), e caso seja positivo, desenharão na posição atribuída. Desenhará também o score, colocando o valor a partir da variavel "qntPulos", e o chão. No final chama-se a função Main e o game se inicia.</p></td>
+        <td ><img src="imagens/desenha.png"></td>
+    </tr>
+        
+    
+    </table>
+    </div>
+
+</body>
+</html>
