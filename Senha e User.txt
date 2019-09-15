@@ -1,2 +1,0 @@
-user: nay
-Senha: adventure
