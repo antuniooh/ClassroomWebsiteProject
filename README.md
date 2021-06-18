@@ -54,7 +54,7 @@ This repository contains the project's publication site, containing its general 
 <!-- HOW TO RUN -->
 ## 🚀 How To Run
 
-⚠️ For a better experience, open the project in the following link: https://antuniooh.github.io/ClassroomWebsiteProject/ ⚠️
+⚠️ For a better experience, open the project in the following link: https://antuniooh.github.io/ClassroomWebsiteProject
 
 ### Terminal
 ```bash
